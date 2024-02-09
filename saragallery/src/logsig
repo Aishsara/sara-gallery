@@ -1,0 +1,141 @@
+ import React, { useState } from 'react';
+import axios from 'axios';
+import '../components/login.css';
+
+function Sample() {
+  const [loginData, setLoginData] = useState({ id:'', username: '', password: '' });
+  const [signupData, setSignupData] = useState({
+    userid:'',
+    username: '',
+    email: '',
+    password: '',
+  });
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleLoginClick = () => {
+    document.querySelector('.wrapper').classList.add('active');
+  };
+
+  const handleSignupClick = () => {
+    document.querySelector('.wrapper').classList.remove('active');
+  };
+
+  const handleLoginFormSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:8080/logging', loginData);
+      alert(response.data);
+      // Handle successful login, e.g., redirect to another page
+    } catch (error) {
+      if (error.response) {
+        // Request was made and server responded with a status code
+        setErrorMessage(error.response.data.message); // Assuming the error response contains a 'message' property
+      } else {
+        // Something else went wrong
+        setErrorMessage('An error occurred. Please try again.');
+      }
+    }
+  };
+
+  const handleSignupFormSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:8080/rpost', signupData);
+    //   alert(response.data);
+      // Handle successful signup, e.g., show success message, redirect to login page
+    } catch (error) {
+      if (error.response) {
+        // Request was made and server responded with a status code
+        setErrorMessage(error.response.data.message); // Assuming the error response contains a 'message' property
+      } else {
+        // Something else went wrong
+        setErrorMessage('An error occurred. Please try again.');
+      }
+    }
+  };
+
+  return (
+    <section className="wrapper">
+      <div className="form signup">
+        <header onClick={handleSignupClick}>Signup</header>
+        <form onSubmit={handleSignupFormSubmit}>
+          <input
+            type="text"
+            placeholder="user name"
+            required
+            value={signupData.username}
+            onChange={(e) =>
+              setSignupData({ ...signupData, username: e.target.value })
+            }
+          />
+          <input
+            type="text"
+            placeholder="Email address"
+            required
+            value={signupData.email}
+            onChange={(e) =>
+              setSignupData({ ...signupData, email: e.target.value })
+            }
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            value={signupData.password}
+            onChange={(e) =>
+              setSignupData({ ...signupData, password: e.target.value })
+            }
+          />
+          <div className="checkbox">
+            <input
+              type="checkbox"
+              id="signupCheck"
+              checked={signupData.acceptTerms}
+              onChange={(e) =>
+                setSignupData({
+                  ...signupData,
+                  acceptTerms: e.target.checked,
+                })
+              }
+            />
+            <label htmlFor="signupCheck">
+              I accept all terms & conditions
+            </label>
+          </div>
+          <input type="submit" value="Signup" />
+          {errorMessage && <p className="error">{errorMessage}</p>}
+        </form>
+      </div>
+      <div className="form login">
+        <header onClick={handleLoginClick}>Login</header>
+        <form onSubmit={handleLoginFormSubmit}>
+          <input
+            type="text"
+            placeholder="Email address"
+            required
+            value={loginData.email}
+            onChange={(e) =>
+              setLoginData({ ...loginData, email: e.target.value })
+            }
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            value={loginData.password}
+            onChange={(e) =>
+              setLoginData({ ...loginData, password: e.target.value })
+            }
+          />
+          <a href="#">Forgot password?</a>
+          <input type="submit" value="Login" />
+          {errorMessage && <p className="error">{errorMessage}</p>}
+        </form>
+      </div>
+    </section>
+  );
+}
+
+export default Sample;

@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-BoldItalic.eot');
+    src: local('Mackay Bold Italic'), local('Mackay-BoldItalic'),
+        url('Mackay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-BoldItalic.woff2') format('woff2'),
+        url('Mackay-BoldItalic.woff') format('woff'),
+        url('Mackay-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-Black.eot');
+    src: local('Mackay Black'), local('Mackay-Black'),
+        url('Mackay-Black.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-Black.woff2') format('woff2'),
+        url('Mackay-Black.woff') format('woff'),
+        url('Mackay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-BlackItalic.eot');
+    src: local('Mackay Black Italic'), local('Mackay-BlackItalic'),
+        url('Mackay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-BlackItalic.woff2') format('woff2'),
+        url('Mackay-BlackItalic.woff') format('woff'),
+        url('Mackay-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-ExtraBoldItalic.eot');
+    src: local('Mackay ExtraBold Italic'), local('Mackay-ExtraBoldItalic'),
+        url('Mackay-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-ExtraBoldItalic.woff2') format('woff2'),
+        url('Mackay-ExtraBoldItalic.woff') format('woff'),
+        url('Mackay-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-Regular.eot');
+    src: local('Mackay Regular'), local('Mackay-Regular'),
+        url('Mackay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-Regular.woff2') format('woff2'),
+        url('Mackay-Regular.woff') format('woff'),
+        url('Mackay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-Medium.eot');
+    src: local('Mackay Medium'), local('Mackay-Medium'),
+        url('Mackay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-Medium.woff2') format('woff2'),
+        url('Mackay-Medium.woff') format('woff'),
+        url('Mackay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-Bold.eot');
+    src: local('Mackay Bold'), local('Mackay-Bold'),
+        url('Mackay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-Bold.woff2') format('woff2'),
+        url('Mackay-Bold.woff') format('woff'),
+        url('Mackay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-ExtraBold.eot');
+    src: local('Mackay ExtraBold'), local('Mackay-ExtraBold'),
+        url('Mackay-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-ExtraBold.woff2') format('woff2'),
+        url('Mackay-ExtraBold.woff') format('woff'),
+        url('Mackay-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-MediumItalic.eot');
+    src: local('Mackay Medium Italic'), local('Mackay-MediumItalic'),
+        url('Mackay-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-MediumItalic.woff2') format('woff2'),
+        url('Mackay-MediumItalic.woff') format('woff'),
+        url('Mackay-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-SemiBold.eot');
+    src: local('Mackay SemiBold'), local('Mackay-SemiBold'),
+        url('Mackay-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-SemiBold.woff2') format('woff2'),
+        url('Mackay-SemiBold.woff') format('woff'),
+        url('Mackay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-SemiBoldItalic.eot');
+    src: local('Mackay SemiBold Italic'), local('Mackay-SemiBoldItalic'),
+        url('Mackay-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-SemiBoldItalic.woff2') format('woff2'),
+        url('Mackay-SemiBoldItalic.woff') format('woff'),
+        url('Mackay-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mackay';
+    src: url('Mackay-Italic.eot');
+    src: local('Mackay Italic'), local('Mackay-Italic'),
+        url('Mackay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Mackay-Italic.woff2') format('woff2'),
+        url('Mackay-Italic.woff') format('woff'),
+        url('Mackay-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
