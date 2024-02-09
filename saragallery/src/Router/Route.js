@@ -28,4 +28,5 @@ import ArtistPage from "../Artist";
   
     )
 }
+
 export default RouterDom;

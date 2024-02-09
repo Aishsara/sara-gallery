@@ -94,7 +94,7 @@ export default function AddDetails() {
             <div className="mb-3">
               <label htmlFor="Name" className="form-label">
                Exhibitions 
-              </label>
+              </label>.
               <input
                 type="text"
                 className="form-control border-dark shadow"

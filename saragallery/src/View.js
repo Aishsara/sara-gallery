@@ -89,4 +89,5 @@ export default function ViewDetails() {
       </div>
     </div>
   );
+  
 }

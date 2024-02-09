@@ -176,4 +176,5 @@ export default function EditDetails() {
       </div>
     </div>
   );
+  
 }

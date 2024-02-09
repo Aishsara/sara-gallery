@@ -31,6 +31,7 @@ const BlogPage = () => {
             “So let us all be citizens” is a small but enlightening retrospective of painter Bob Thompson’s meteoric career, which ended prematurely on May 30, 1966—roughly a month before the artist’s twenty-ninth birthday. Deftly curated by 52 Walker’s Ebony L. Haynes, the show presents fourteen oil paintings,
             </p>
            
+
           </div>
         </div>
       </div>

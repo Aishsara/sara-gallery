@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <>.
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Arizonia&display=swap" rel="stylesheet" />
   <div class="v1_5">
 
@@ -24,5 +24,6 @@ function App() {
 </>
   );
 }
+
 
 export default App;

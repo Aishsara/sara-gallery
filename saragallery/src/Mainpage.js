@@ -8,6 +8,7 @@ import NavigationBar from './Navbar';
 
 export default function Mainpage() {
 
+  
     const [user,setUser]=useState([])
 
     useEffect(()=>
