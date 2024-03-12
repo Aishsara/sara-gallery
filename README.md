@@ -17,13 +17,13 @@ CSS
 ## Backend
 The backend of the Sara Gallery System is developed using Spring Boot, Eclipse IDE, and MySQL database for data management.
 The backend code for Sara Gallery is located in a separate repository. 
-You can find the backend code, including the server-side logic and database management, in the [backend repository](link-to-backend-repo.
+You can find the backend code, including the server-side logic and database management, in the [Git-](https://github.com/Aishsara/Git-/tree/main/Saragallery)
 
 **Technologies Used:**
-Spring Boot
-Java
-Eclipse IDE
-MySQL
+`Spring Boot`
+* Java
+* Eclipse IDE
+* MySQL
 
 **Features**
 User-friendly interface for browsing and managing artwork.
